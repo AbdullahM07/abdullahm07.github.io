@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Declassification Ledger</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1440px; height:900px; overflow:hidden; background:#08080a; color:#f2f2f2; font-family:'Archivo',sans-serif; position:relative; }
+  .mono { font-family:'Martian Mono',monospace; }
+  .topbar { position:absolute; top:0; left:0; right:0; height:52px; border-bottom:1px solid #1c1c22; display:flex; align-items:center; justify-content:space-between; padding:0 48px; }
+  .topbar span { font-family:'Martian Mono',monospace; font-size:11px; letter-spacing:3px; color:#8a8a90; }
+  .topbar .red { color:#d10a11; }
+  .main { position:absolute; top:52px; bottom:76px; left:0; right:0; display:flex; }
+  .left { width:56%; padding:72px 48px 48px 64px; position:relative; }
+  .kicker { font-family:'Martian Mono',monospace; font-size:12px; letter-spacing:4px; color:#d10a11; margin-bottom:28px; }
+  h1 { font-size:104px; font-weight:900; line-height:.95; letter-spacing:-2px; text-transform:uppercase; }
+  .redact { display:inline-block; width:400px; height:82px; background:#1c1c22; position:relative; vertical-align:baseline; }
+  .redact::after { content:""; position:absolute; inset:0; right:38%; background:#08080a; border-right:3px solid #d10a11; }
+  .sub { margin-top:36px; font-size:20px; line-height:1.6; color:#b9b9bf; max-width:560px; font-weight:500; }
+  .sub b { color:#f2f2f2; }
+  .stamp { position:absolute; left:64px; bottom:120px; border:3px solid #d10a11; color:#d10a11; padding:14px 26px; font-family:'Martian Mono',monospace; font-size:13px; letter-spacing:3px; transform:rotate(-6deg); font-weight:700; }
+  .right { width:44%; border-left:1px solid #1c1c22; padding:64px 56px; }
+  .doc-label { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:3px; color:#8a8a90; margin-bottom:24px; }
+  .row { border-bottom:1px solid #16161b; padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
+  .row .name { font-weight:700; font-size:17px; letter-spacing:.5px; }
+  .row .tag { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:2px; color:#8a8a90; }
+  .row.open .name { color:#f2f2f2; }
+  .row.open .tag { color:#d10a11; }
+  .bar { height:12px; background:#1c1c22; margin-top:8px; }
+  .bar.b2 { width:82%; } .bar.b3 { width:64%; } .bar.b4 { width:91%; } .bar.b5 { width:55%; }
+  .row.open .bar { width:70%; background:linear-gradient(90deg,#d10a11 55%, #1c1c22 55%); }
+  .botbar { position:absolute; bottom:0; left:0; right:0; height:76px; border-top:1px solid #1c1c22; display:flex; align-items:center; padding:0 48px; gap:40px; }
+  .nav { font-family:'Martian Mono',monospace; font-size:11px; letter-spacing:2.5px; color:#8a8a90; }
+  .nav b { color:#f2f2f2; }
+  .cv { margin-left:auto; background:#d10a11; color:#08080a; font-family:'Martian Mono',monospace; font-weight:700; font-size:12px; letter-spacing:2px; padding:14px 28px; }
+</style>
+</head>
+<body>
+  <div class="topbar"><span>FILE NO. 640509-040822</span><span><span class="red">●</span> ACTIVE — PUBLIC RELEASE</span></div>
+  <div class="main">
+    <div class="left">
+      <div class="kicker">CASE FILE / SOFTWARE ENGINEER — FULL-STACK</div>
+      <h1>ABDULLAH<br><span class="redact"></span><br>MOHAMED</h1>
+      <p class="sub">Full-stack products, <b>shipped end-to-end</b> — from schema to screen. Five systems currently live. <b>Cairo → worldwide.</b></p>
+      <div class="stamp">DECLASSIFIED — SCROLL TO CLEAR</div>
+    </div>
+    <div class="right">
+      <div class="doc-label">EXHIBITS / 01–05 — LIVE SYSTEMS</div>
+      <div class="row open"><div><div class="name">OPENSHIP</div><div class="bar"></div></div><span class="tag">CLEARED</span></div>
+      <div class="row"><div><div class="name">█████ ███</div><div class="bar b2"></div></div><span class="tag">SEALED</span></div>
+      <div class="row"><div><div class="name">█████</div><div class="bar b3"></div></div><span class="tag">SEALED</span></div>
+      <div class="row"><div><div class="name">██████</div><div class="bar b4"></div></div><span class="tag">SEALED</span></div>
+      <div class="row"><div><div class="name">████ ████</div><div class="bar b5"></div></div><span class="tag">SEALED</span></div>
+    </div>
+  </div>
+  <div class="botbar">
+    <span class="nav"><b>01</b> DOSSIER</span><span class="nav">02 EQUIPMENT</span><span class="nav">03 CONTRACTS</span><span class="nav">04 CONTACT</span>
+    <span class="cv">DOWNLOAD CV.PDF ↓</span>
+  </div>
+</body>
+</html>

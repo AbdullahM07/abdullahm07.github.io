@@ -1,0 +1,107 @@
+{
+  "profile": {
+    "name": "Abdullah Mohamed",
+    "codename": "AbdullahM07",
+    "role": "Software Engineer — Full-Stack",
+    "tagline": "Ships, end to end.",
+    "bio": "Problems have solutions. Enjoy the process.",
+    "statement": "Full-stack engineer. Products that stay running — not demos that die on deploy day.",
+    "location": "Cairo, Egypt",
+    "employer": "Oblien",
+    "education": "B.Sc. Computer Science — Suez Canal University",
+    "fileNo": "640509-040822",
+    "status": "ACTIVE",
+    "avatar": "avatar.jpg",
+    "socials": [
+      { "id": "email", "label": "Email", "handle": "abdullahmahbob07@gmail.com", "url": "mailto:abdullahmahbob07@gmail.com" },
+      { "id": "linkedin", "label": "LinkedIn", "handle": "in/3bs7", "url": "https://www.linkedin.com/in/3bs7" },
+      { "id": "github", "label": "GitHub", "handle": "@AbdullahM07", "url": "https://github.com/AbdullahM07" },
+      { "id": "discord", "label": "Discord", "handle": "discord.gg/_3bbs", "url": "https://discord.gg/_3bbs" }
+    ]
+  },
+  "stats": [
+    { "label": "SYSTEMS LIVE", "value": "5" },
+    { "label": "REPOSITORIES", "value": "14" },
+    { "label": "LANGUAGES", "value": "4" }
+  ],
+  "skills": [
+    { "group": "LANGUAGES", "items": ["JavaScript", "TypeScript", "Python", "SQL"] },
+    { "group": "FRONTEND", "items": ["React", "Next.js", "Tailwind CSS", "HTML/CSS"] },
+    { "group": "BACKEND", "items": ["Node.js", "Express", "MongoDB", "PostgreSQL", "REST APIs"] },
+    { "group": "TOOLING", "items": ["Git", "Docker", "Linux", "Vercel", "GitHub Actions"] }
+  ],
+  "projects": [
+    {
+      "id": "openship",
+      "index": "01",
+      "name": "Openship",
+      "tagline": "Self-hosted deployment platform — push code, it ships itself.",
+      "description": "A deployment platform teams run on their own hardware: connect a repository, get builds, releases and rollbacks without handing your infrastructure to a third party.",
+      "stack": ["TypeScript", "Docker", "Self-hosted", "Apache-2.0"],
+      "live": "https://openship.io",
+      "repo": null,
+      "role": "Engineering — Oblien",
+      "featured": true
+    },
+    {
+      "id": "clinicai",
+      "index": "02",
+      "name": "ClinicAI",
+      "tagline": "Clinic management workspace — patients to prescriptions, finance to WhatsApp.",
+      "description": "A bilingual (Arabic/English) clinic platform: appointments, prescriptions, finance, branches and team access across web, dashboard and mobile, with AI assistance and per-clinic WhatsApp through Twilio.",
+      "stack": ["React", "Expo", "Monorepo", "Twilio", "PostgreSQL"],
+      "live": null,
+      "repo": null,
+      "role": "Engineering — Oblien",
+      "featured": true
+    },
+    {
+      "id": "mindwire",
+      "index": "03",
+      "name": "Mindwire",
+      "tagline": "Ship AI products on the best harnesses — without building another agent loop.",
+      "description": "An SDK that puts production-ready agent harnesses behind one interface, so product teams spend their time on the product, not the loop.",
+      "stack": ["AI", "Agents", "SDK", "Apache-2.0"],
+      "live": "https://mindwire.sh",
+      "repo": null,
+      "role": "Engineering — Oblien",
+      "featured": true
+    },
+    {
+      "id": "masroof",
+      "index": "04",
+      "name": "Masroof",
+      "tagline": "Personal finance manager with sign-in and cross-device cloud sync.",
+      "description": "Income, expenses, budgets, subscriptions, accounts and savings goals — a full financial picture that follows the user across devices.",
+      "stack": ["JavaScript", "React", "Cloud Sync"],
+      "live": "https://masroof-navy.vercel.app",
+      "repo": "https://github.com/AbdullahM07/Masroof",
+      "role": "Builder",
+      "featured": true
+    },
+    {
+      "id": "watchlink",
+      "index": "05",
+      "name": "WatchLink",
+      "tagline": "Real-time watch-together: synced playback, chat, and push-to-talk voice.",
+      "description": "A watch-party platform where playback stays in sync across every participant, with chat, reactions, shared notes and WebRTC push-to-talk voice rooms.",
+      "stack": ["TypeScript", "WebRTC", "Real-time"],
+      "live": "https://watch-link-web.vercel.app",
+      "repo": "https://github.com/AbdullahM07/WatchLink",
+      "role": "Builder",
+      "featured": true
+    },
+    {
+      "id": "ems",
+      "index": "06",
+      "name": "Employee Management System",
+      "tagline": "Employee records service on Node.js, Express and MongoDB.",
+      "description": "A CRUD-first employee records system built to exercise the full MERN request lifecycle: REST routes, schema validation and persistence.",
+      "stack": ["Node.js", "Express", "MongoDB"],
+      "live": null,
+      "repo": "https://github.com/AbdullahM07/Employee-Management-System",
+      "role": "Builder",
+      "featured": false
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "title": "Choose the portfolio's structure",
+  "question": "One identity — the agency dossier from your GitHub profile (#08080a / #d10a11). Four structures for the page. Pick one to lock.",
+  "options": [
+    {
+      "id": "assigned-declassify",
+      "kind": "assigned",
+      "label": "Declassification Ledger",
+      "kicker": "THE ROLL",
+      "lineage": "declassified government files — redaction bars that wipe open",
+      "thesis": "The file arrives censored; scrolling clears each exhibit open, live link by live link.",
+      "palette": ["#08080a", "#d10a11", "#f2f2f2", "#8a8a90"],
+      "materials": ["redaction ink", "rubber stamps", "ledger rules"],
+      "viewport": "Giant name half-covered by one redaction bar mid-wipe; right column of sealed exhibits; red DECLASSIFIED stamp.",
+      "risk": "Hides content before it reveals it — must never make a client hunt for proof.",
+      "raised": [
+        {"from": "challenger-vertical-feed", "raise": "Each contract owns its full viewport when opened — one exhibit at a time, at full scale."},
+        {"from": "challenger-teletext", "raise": "Sections carry keyed addresses (01–04), directly jumpable from the footer bar."},
+        {"from": "challenger-gravity-garden", "raise": "Motion is damped single-axis — bars wipe, nothing overshoots or bounces."},
+        {"from": "challenger-plankton-wake", "raise": "Type holds strict contrast discipline on the near-black ground — no glow, no gradient."}
+      ],
+      "html": ".impeccable/mocks/decision/assigned-declassify.html"
+    },
+    {
+      "id": "dealt-dossier-card",
+      "kind": "dealt",
+      "label": "The Dossier Card",
+      "lineage": "the personnel ID card from your GitHub README, scaled to a hero",
+      "thesis": "The ID card IS the hero: photo box, key-value rows, barcode, ACTIVE stamp — then the file opens below.",
+      "palette": ["#08080a", "#d10a11", "#f2f2f2", "#8a8a90"],
+      "materials": ["card stock", "machine stamps", "barcode ink"],
+      "viewport": "Left: the physical ID card, boxed and stamped. Right: 'SHIPS, END TO END.' with live-system stats.",
+      "risk": "The ID-card hero is the most literal reading of your GitHub profile — strongest continuity, least surprise.",
+      "raised": [
+        {"from": "challenger-vertical-feed", "raise": "Contract sections open full-viewport, one case at a time."},
+        {"from": "challenger-teletext", "raise": "Footer nav carries keyed section addresses."}
+      ],
+      "html": ".impeccable/mocks/decision/dealt-dossier-card.html"
+    },
+    {
+      "id": "dealt-clearance-rail",
+      "kind": "dealt",
+      "label": "Clearance Rail",
+      "lineage": "security-clearance ladders — L0 to L3, granted as you scroll",
+      "thesis": "A fixed left rail tracks your clearance level; each section grants the next level until the debrief.",
+      "palette": ["#08080a", "#d10a11", "#f2f2f2", "#8a8a90"],
+      "materials": ["status lights", "ladder rules", "mono gauges"],
+      "viewport": "Vertical L0–L3 rail with red fill at 25%; stage right: massive name over a row of live-system status chips.",
+      "risk": "Progress-for-progress'-sake if the levels don't mark real content boundaries.",
+      "raised": [
+        {"from": "challenger-gravity-garden", "raise": "Rail motion is a single damped axis tied to scroll, nothing else moves."},
+        {"from": "challenger-teletext", "raise": "Levels are keyboard-addressable (L0–L3 keys jump sections)."}
+      ],
+      "html": ".impeccable/mocks/decision/dealt-clearance-rail.html"
+    },
+    {
+      "id": "challenger-field-reference",
+      "kind": "challenger",
+      "catalogId": "rw-centre-rail-reference-setting",
+      "verdict": "wins",
+      "label": "Field Reference",
+      "lineage": "rw-centre-rail-reference-setting — a ruled reference edition, twin columns around a vermilion key rail",
+      "thesis": "The portfolio as a typeset field manual: dense twin columns, a red key rail (01–04) running down the centre, evidence URLs hung in the margin like apparatus.",
+      "palette": ["#08080a", "#d10a11", "#f2f2f2", "#8a8a90"],
+      "materials": ["hairline rules", "key detents", "margin apparatus"],
+      "viewport": "Centered masthead over twin dossier columns; the red key rail carries section detents; live-system evidence sits in the margin.",
+      "case": "Fuses cleanly: keys map to sections, marginalia map to evidence links, and its ink-plus-vermilion grammar is nearly isomorphic with your dossier identity — it reads as pure craft to freelance clients.",
+      "risk": "The densest, quietest of the four — its power is precision, not spectacle.",
+      "hero": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rw-centre-rail-reference-setting.webp",
+      "html": ".impeccable/mocks/decision/challenger-field-reference.html"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  }
+}

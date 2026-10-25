@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clearance Rail</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1440px; height:900px; overflow:hidden; background:#08080a; color:#f2f2f2; font-family:'Archivo',sans-serif; position:relative; }
+  .rail { position:absolute; left:0; top:0; bottom:0; width:96px; border-right:1px solid #1c1c22; display:flex; flex-direction:column; align-items:center; padding-top:40px; }
+  .rail .vt { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:6px; color:#8a8a90; writing-mode:vertical-rl; margin-bottom:36px; }
+  .lvl { width:100%; padding:16px 0; text-align:center; font-family:'Martian Mono',monospace; font-size:9.5px; letter-spacing:1.5px; color:#5a5a63; position:relative; }
+  .lvl.on { color:#f2f2f2; }
+  .lvl.on::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:#d10a11; }
+  .lvl.on .dot, .lvl .dot { display:block; font-size:13px; margin-bottom:8px; color:#2a2a32; }
+  .lvl.on .dot { color:#d10a11; }
+  .rail .fill { margin-top:auto; margin-bottom:28px; font-family:'Martian Mono',monospace; font-size:9px; letter-spacing:2px; color:#d10a11; }
+  .stage { position:absolute; left:96px; right:0; top:0; bottom:0; padding:96px 88px; }
+  .filebar { position:absolute; top:0; left:96px; right:0; height:52px; border-bottom:1px solid #1c1c22; display:flex; align-items:center; justify-content:space-between; padding:0 48px; }
+  .filebar span { font-family:'Martian Mono',monospace; font-size:11px; letter-spacing:3px; color:#8a8a90; }
+  .kicker { font-family:'Martian Mono',monospace; font-size:12px; letter-spacing:5px; color:#d10a11; margin-bottom:26px; }
+  h1 { font-size:112px; font-weight:900; line-height:.93; letter-spacing:-2.5px; text-transform:uppercase; }
+  .role { margin-top:26px; font-size:22px; color:#b9b9bf; font-weight:500; }
+  .role b { color:#f2f2f2; }
+  .sys { margin-top:56px; }
+  .sys .t { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:3px; color:#8a8a90; margin-bottom:16px; }
+  .lights { display:flex; gap:14px; }
+  .chip { border:1px solid #2a2a32; padding:11px 18px; font-family:'Martian Mono',monospace; font-size:10.5px; letter-spacing:1.5px; color:#f2f2f2; }
+  .chip::before { content:"● "; color:#d10a11; }
+  .cta { margin-top:56px; display:flex; gap:16px; }
+  .btn { font-family:'Martian Mono',monospace; font-size:12px; letter-spacing:2px; padding:15px 30px; font-weight:700; }
+  .btn.solid { background:#d10a11; color:#08080a; }
+  .btn.ghost { border:1px solid #2a2a32; color:#f2f2f2; }
+  .clear { position:absolute; right:64px; top:110px; text-align:right; font-family:'Martian Mono',monospace; }
+  .clear .c1 { font-size:10px; letter-spacing:3px; color:#8a8a90; }
+  .clear .c2 { font-size:30px; font-weight:700; color:#f2f2f2; margin-top:8px; }
+  .clear .c2 em { font-style:normal; color:#d10a11; }
+</style>
+</head>
+<body>
+  <div class="rail">
+    <div class="vt">CLEARANCE</div>
+    <div class="lvl on"><span class="dot">●</span>L0<br>DOSSIER</div>
+    <div class="lvl"><span class="dot">○</span>L1<br>EQUIP</div>
+    <div class="lvl"><span class="dot">○</span>L2<br>CONTRACTS</div>
+    <div class="lvl"><span class="dot">○</span>L3<br>CONTACT</div>
+    <div class="fill">25%</div>
+  </div>
+  <div class="filebar"><span>FILE NO. 640509-040822</span><span>@AbdullahM07 — OBLIEN — CAIRO</span></div>
+  <div class="stage">
+    <div class="clear"><div class="c1">CLEARANCE LEVEL</div><div class="c2">L<em>0</em> — GRANTED</div></div>
+    <div class="kicker">PERSONNEL FILE / SOFTWARE ENGINEER</div>
+    <h1>ABDULLAH<br>MOHAMED</h1>
+    <p class="role">Full-stack engineer. <b>Products that stay running</b> — not demos that die on deploy day.</p>
+    <div class="sys">
+      <div class="t">SYSTEMS ONLINE — VERIFIED LIVE</div>
+      <div class="lights"><span class="chip">openship.io</span><span class="chip">mindwire.sh</span><span class="chip">masroof</span><span class="chip">watchlink</span></div>
+    </div>
+    <div class="cta"><span class="btn solid">BEGIN CLEARANCE ↓</span><span class="btn ghost">CV.PDF ↓</span></div>
+  </div>
+</body>
+</html>

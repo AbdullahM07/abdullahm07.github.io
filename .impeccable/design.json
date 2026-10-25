@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T19:55:00Z",
+  "title": "Design System: Abdullah Mohamed — Field Reference",
+  "extensions": {
+    "colorMeta": {
+      "ground": { "role": "neutral", "displayName": "Ground", "canonical": "#08080a" },
+      "signal-red": { "role": "primary", "displayName": "Signal Red", "canonical": "#d10a11", "tonalRamp": ["#3a0405", "#5c0607", "#7e080a", "#a0090d", "#d10a11", "#e3231a", "#f43a3a", "#fa8a7c"] },
+      "red-text": { "role": "primary", "displayName": "Readable Red", "canonical": "#f43a3a" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#f2f2f2" },
+      "ink-2": { "role": "neutral", "displayName": "Reading Ink", "canonical": "#c9c9cf" },
+      "muted": { "role": "neutral", "displayName": "Apparatus Ink", "canonical": "#8a8a90" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Masthead name only, once per page." },
+      "label": { "displayName": "Apparatus", "purpose": "Keys, indices, tags, metadata — addressing, never sentences." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Reveals and state transitions; single-axis, no overshoot." },
+      { "name": "reveal", "value": "300ms ease-standard, translateY(14px)+opacity", "purpose": "One-shot entrance when elements enter the viewport; disabled under prefers-reduced-motion." },
+      { "name": "rail-fill", "value": "140ms linear scaleY", "purpose": "Scroll-linked detent advance on the key rail." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "1380px" },
+      { "name": "stack", "value": "980px" },
+      { "name": "compact", "value": "560px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single red action: CV download, form submit.",
+      "html": "<a class=\"ds-cv\" href=\"#\">DOWNLOAD CV.PDF ↓</a>",
+      "css": ".ds-cv { display: inline-block; background: #d10a11; color: #08080a; font-family: 'Martian Mono', monospace; font-size: 11.5px; font-weight: 700; letter-spacing: 2px; padding: 15px 28px; text-decoration: none; } .ds-cv:hover { background: #e3231a; } .ds-cv:focus-visible { outline: 1px solid #f43a3a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Stack Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Technology tag on contract entries.",
+      "html": "<span class=\"ds-chip\">TypeScript</span>",
+      "css": ".ds-chip { font-family: 'Martian Mono', monospace; font-size: 9px; letter-spacing: 1px; color: #8a8a90; border: 1px solid #26262d; padding: 4px 9px; }"
+    },
+    {
+      "name": "Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Message-form field on raised ground.",
+      "html": "<input class=\"ds-input\" />",
+      "css": ".ds-input { width: 100%; background: #0d0d11; border: 1px solid #26262d; color: #f2f2f2; font-size: 14px; padding: 11px 13px; } .ds-input:focus-visible { outline: 1px solid #d10a11; outline-offset: 0; }"
+    },
+    {
+      "name": "Key Rail Key",
+      "kind": "custom",
+      "refersTo": "nav",
+      "description": "The signature navigation key: a 30px square that fills red when its section is active.",
+      "html": "<a class=\"ds-key ds-key-active\" href=\"#dossier\"><span class=\"sq\">01</span><span class=\"lb\">DOSSIER</span></a>",
+      "css": ".ds-key { display: flex; flex-direction: column; align-items: center; gap: 6px; text-decoration: none; } .ds-key .sq { width: 30px; height: 30px; border: 1px solid #26262d; color: #8a8a90; font-family: 'Martian Mono', monospace; font-size: 10px; font-weight: 700; display: flex; align-items: center; justify-content: center; background: #08080a; } .ds-key .lb { font-family: 'Martian Mono', monospace; font-size: 7.5px; letter-spacing: 1.5px; color: #8a8a90; } .ds-key-active .sq { background: #d10a11; border-color: #d10a11; color: #08080a; } .ds-key-active .lb { color: #f2f2f2; }"
+    },
+    {
+      "name": "Contract Entry",
+      "kind": "card",
+      "description": "Ledger-style project entry: top hairline, typographic anatomy, no card box.",
+      "html": "<article class=\"ds-contract\"><span class=\"idx\">CONTRACT 01 — ENGINEERING — OBLIEN</span><h3>OPENSHIP</h3><p class=\"tag\">Self-hosted deployment platform — push code, it ships itself.</p><a class=\"ev\" href=\"#\">LIVE ↗</a></article>",
+      "css": ".ds-contract { border-top: 1px solid #26262d; padding: 26px 0 34px; } .ds-contract .idx { font-family: 'Martian Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 2.5px; color: #f43a3a; } .ds-contract h3 { font-size: 21px; font-weight: 800; text-transform: uppercase; margin: 10px 0 6px; color: #f2f2f2; } .ds-contract .tag { font-size: 14px; font-weight: 700; color: #c9c9cf; } .ds-contract .ev { display: inline-block; margin-top: 18px; font-family: 'Martian Mono', monospace; font-size: 10px; letter-spacing: 2px; color: #f43a3a; text-decoration: underline; text-underline-offset: 4px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Field Reference",
+    "overview": "The site is a typeset operative file: dense dossier text set in twin columns around a keyed centre rail, evidence URLs hung in the outer margin like scholarly apparatus. Depth comes from hairlines and density, never from shadow or glow; the interface recedes so the record leads. The identity extends the established GitHub agency-dossier brand: near-black ground, signal red, tracked mono labels, file numbers.",
+    "keyCharacteristics": [
+      "Near-black ground with one signal red reserved for keys, rules, and the primary action",
+      "Hairline rules at one device pixel (canvas ruling engine for structural rules)",
+      "Archivo display voice with Martian Mono apparatus labels",
+      "One moving part: the key rail's red detent, scroll-linked, damped, single-axis",
+      "Every claim anchored to a live URL; no decoration the record did not earn"
+    ],
+    "rules": [
+      { "name": "The Red Budget Rule", "body": "Red covers under ~5% of any viewport. If a red element is not a key, a rule, a leader, or the single primary action, it is not red.", "section": "colors" },
+      { "name": "The Readable Red Rule", "body": "Red as text below 18px uses #f43a3a on this ground; #d10a11 is a fill color, not a text color.", "section": "colors" },
+      { "name": "The Apparatus Rule", "body": "Mono is for measurement and addressing (keys, file numbers, indices, handles), never for sentences. Prose is always Archivo.", "section": "typography" }
+    ],
+    "dos": [
+      "Do keep red as keys, rules, and the single primary action (≤5% of a viewport).",
+      "Do set every label in tracked uppercase Martian Mono and every sentence in Archivo.",
+      "Do collapse all motion under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't use #d10a11 for small text on the ground — use #f43a3a.",
+      "Don't add shadows, glows, gradients, or glass decoration; structure is hairlines.",
+      "Don't introduce rounded corners, pills, or emoji/glyph icons."
+    ]
+  }
+}

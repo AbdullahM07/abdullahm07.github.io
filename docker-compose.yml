@@ -1,0 +1,42 @@
+services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand('ping').ok"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  seed:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      MONGODB_DB: portfolio
+    depends_on:
+      mongo:
+        condition: service_healthy
+    command: npm run seed
+    restart: "no"
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    environment:
+      MONGODB_URI: mongodb://mongo:27017
+      MONGODB_DB: portfolio
+      PORT: 4011
+    ports:
+      - "4011:4011"
+    depends_on:
+      seed:
+        condition: service_completed_successfully
+
+volumes:
+  mongo-data:

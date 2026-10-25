@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Dossier Card</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1440px; height:900px; overflow:hidden; background:#08080a; color:#f2f2f2; font-family:'Archivo',sans-serif; position:relative; }
+  .mono { font-family:'Martian Mono',monospace; }
+  .topbar { position:absolute; top:0; left:0; right:0; height:52px; border-bottom:1px solid #1c1c22; display:flex; align-items:center; justify-content:space-between; padding:0 48px; }
+  .topbar span { font-family:'Martian Mono',monospace; font-size:11px; letter-spacing:3px; color:#8a8a90; }
+  .main { position:absolute; top:52px; bottom:0; left:0; right:0; display:flex; }
+  .cardcol { width:44%; display:flex; align-items:center; justify-content:center; }
+  .idcard { width:440px; border:1px solid #2a2a32; background:#0d0d11; position:relative; }
+  .idcard .chead { border-bottom:1px solid #2a2a32; padding:14px 20px; display:flex; justify-content:space-between; font-family:'Martian Mono',monospace; font-size:9px; letter-spacing:2.5px; color:#8a8a90; }
+  .idcard .chead b { color:#d10a11; }
+  .photo { margin:20px; height:210px; border:1px solid #2a2a32; background:repeating-linear-gradient(45deg,#101016 0 10px,#0d0d11 10px 20px); display:flex; align-items:center; justify-content:center; }
+  .photo span { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:4px; color:#5a5a63; }
+  .kv { padding:0 20px 8px; }
+  .kv .r { display:flex; border-bottom:1px solid #16161b; padding:9px 0; }
+  .kv .k { width:130px; font-family:'Martian Mono',monospace; font-size:8.5px; letter-spacing:2.5px; color:#8a8a90; padding-top:4px; }
+  .kv .v { font-size:14.5px; font-weight:700; letter-spacing:.3px; }
+  .barcode { margin:14px 20px 20px; height:34px; background:repeating-linear-gradient(90deg,#f2f2f2 0 2px,transparent 2px 5px,#f2f2f2 5px 8px,transparent 8px 11px); opacity:.75; }
+  .activestamp { position:absolute; top:-16px; right:-20px; border:2px solid #d10a11; color:#d10a11; font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:2px; padding:8px 14px; transform:rotate(7deg); font-weight:700; background:#08080a; }
+  .txt { width:56%; padding:110px 72px 0 8px; }
+  .role { font-family:'Martian Mono',monospace; font-size:12px; letter-spacing:5px; color:#d10a11; margin-bottom:22px; }
+  h1 { font-size:96px; font-weight:900; line-height:.95; letter-spacing:-2px; text-transform:uppercase; }
+  .line { margin-top:34px; font-size:21px; line-height:1.65; color:#b9b9bf; max-width:560px; font-weight:500; }
+  .line b { color:#f2f2f2; }
+  .stats { display:flex; gap:44px; margin-top:44px; }
+  .stat .n { font-size:44px; font-weight:900; color:#f2f2f2; }
+  .stat .n em { color:#d10a11; font-style:normal; }
+  .stat .l { font-family:'Martian Mono',monospace; font-size:9px; letter-spacing:2.5px; color:#8a8a90; margin-top:6px; }
+  .cta { margin-top:46px; display:flex; gap:16px; }
+  .btn { font-family:'Martian Mono',monospace; font-size:12px; letter-spacing:2px; padding:15px 30px; font-weight:700; }
+  .btn.solid { background:#d10a11; color:#08080a; }
+  .btn.ghost { border:1px solid #2a2a32; color:#f2f2f2; }
+  .botbar { position:absolute; bottom:0; left:0; right:0; height:64px; border-top:1px solid #1c1c22; display:flex; align-items:center; padding:0 48px; gap:40px; }
+  .nav { font-family:'Martian Mono',monospace; font-size:11px; letter-spacing:2.5px; color:#8a8a90; }
+  .nav b { color:#f2f2f2; }
+</style>
+</head>
+<body>
+  <div class="topbar"><span>FILE NO. 640509-040822</span><span>AGENCY REGISTRY — OBLIEN / CAIRO</span></div>
+  <div class="main">
+    <div class="cardcol">
+      <div class="idcard">
+        <div class="activestamp">ACTIVE</div>
+        <div class="chead"><span>PERSONNEL FILE</span><b>640509-040822</b></div>
+        <div class="photo"><span>PHOTO ON FILE</span></div>
+        <div class="kv">
+          <div class="r"><div class="k">NAME</div><div class="v">Abdullah Mohamed</div></div>
+          <div class="r"><div class="k">CODENAME</div><div class="v">@AbdullahM07</div></div>
+          <div class="r"><div class="k">LOCATION</div><div class="v">Cairo, Egypt</div></div>
+          <div class="r"><div class="k">EMPLOYER</div><div class="v">Oblien</div></div>
+          <div class="r"><div class="k">TRAINING</div><div class="v">B.Sc. Computer Science — SCU</div></div>
+        </div>
+        <div class="barcode"></div>
+      </div>
+    </div>
+    <div class="txt">
+      <div class="role">SOFTWARE ENGINEER — FULL-STACK</div>
+      <h1>SHIPS,<br>END&nbsp;TO&nbsp;END.</h1>
+      <p class="line">React on the screen, Express and Mongo under it, Docker and CI behind it. <b>Every project on this file is live right now.</b></p>
+      <div class="stats">
+        <div class="stat"><div class="n">5</div><div class="l">SYSTEMS LIVE</div></div>
+        <div class="stat"><div class="n">14</div><div class="l">REPOSITORIES</div></div>
+        <div class="stat"><div class="n"><em>2</em>k</div><div class="l">CONTRIBUTIONS / YR</div></div>
+      </div>
+      <div class="cta"><span class="btn solid">OPEN THE FILE ↓</span><span class="btn ghost">CV.PDF ↓</span></div>
+    </div>
+  </div>
+  <div class="botbar">
+    <span class="nav"><b>01</b> DOSSIER</span><span class="nav">02 EQUIPMENT</span><span class="nav">03 CONTRACTS</span><span class="nav">04 CONTACT</span>
+  </div>
+</body>
+</html>

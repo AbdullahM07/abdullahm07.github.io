@@ -1,0 +1,24 @@
+{
+  "name": "abdullah-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio of Abdullah Mohamed — MERN monorepo (client + API)",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c red,blue \"npm run dev -w apps/server\" \"npm run dev -w apps/client\"",
+    "seed": "npm run seed -w apps/server",
+    "build": "npm run build -w apps/client",
+    "start": "npm start -w apps/server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
+  }
+}

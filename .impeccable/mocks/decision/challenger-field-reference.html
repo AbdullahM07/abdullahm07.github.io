@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Field Reference</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Martian+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1440px; height:900px; overflow:hidden; background:#08080a; color:#f2f2f2; font-family:'Archivo',sans-serif; position:relative; }
+  .topbar { position:absolute; top:0; left:0; right:0; height:48px; border-bottom:1px solid #1c1c22; display:flex; align-items:center; justify-content:space-between; padding:0 56px; }
+  .topbar span { font-family:'Martian Mono',monospace; font-size:10.5px; letter-spacing:3px; color:#8a8a90; }
+  .topbar .red { color:#d10a11; }
+  .book { position:absolute; top:48px; bottom:64px; left:50%; transform:translateX(-50%); width:1120px; display:flex; }
+  .col { flex:1; padding:44px 34px 0; }
+  .masthead { position:absolute; top:76px; left:0; right:0; text-align:center; }
+  .masthead .over { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:5px; color:#d10a11; }
+  .masthead h1 { font-size:58px; font-weight:900; letter-spacing:1px; text-transform:uppercase; margin-top:10px; }
+  .masthead .under { font-family:'Martian Mono',monospace; font-size:10px; letter-spacing:3px; color:#8a8a90; margin-top:10px; }
+  .rail2 { width:64px; border-left:1px solid #1c1c22; border-right:1px solid #1c1c22; display:flex; flex-direction:column; align-items:center; padding-top:250px; gap:34px; }
+  .key { text-align:center; font-family:'Martian Mono',monospace; }
+  .key .sq { width:30px; height:30px; border:1px solid #d10a11; color:#d10a11; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center; margin:0 auto; }
+  .key .lb { font-size:7.5px; letter-spacing:1.5px; color:#8a8a90; margin-top:7px; }
+  .key.on .sq { background:#d10a11; color:#08080a; }
+  .key.on .lb { color:#f2f2f2; }
+  .body-start { margin-top:196px; }
+  p.dossier { font-size:15.5px; line-height:1.62; color:#c9c9cf; font-weight:500; }
+  p.dossier b { color:#f2f2f2; }
+  p.dossier .lead { font-weight:700; color:#f2f2f2; font-size:17px; }
+  .equipment { margin-top:26px; }
+  .equipment .t { font-family:'Martian Mono',monospace; font-size:9px; letter-spacing:2.5px; color:#d10a11; margin-bottom:10px; }
+  .eq-line { display:flex; justify-content:space-between; border-bottom:1px solid #16161b; padding:7px 0; font-size:13.5px; color:#c9c9cf; font-weight:600; }
+  .eq-line span:last-child { font-family:'Martian Mono',monospace; font-size:9.5px; color:#8a8a90; letter-spacing:1px; padding-top:3px; }
+  .margin-note { position:absolute; right:-176px; width:160px; font-family:'Martian Mono',monospace; font-size:9px; line-height:1.7; letter-spacing:.5px; color:#8a8a90; border-left:2px solid #d10a11; padding-left:12px; }
+  .margin-note b { color:#f2f2f2; display:block; margin-bottom:4px; }
+  .botbar { position:absolute; bottom:0; left:0; right:0; height:64px; border-top:1px solid #1c1c22; display:flex; align-items:center; justify-content:space-between; padding:0 56px; }
+  .botbar span { font-family:'Martian Mono',monospace; font-size:10.5px; letter-spacing:2.5px; color:#8a8a90; }
+  .botbar .cv { background:#d10a11; color:#08080a; font-weight:700; padding:12px 24px; }
+</style>
+</head>
+<body>
+  <div class="topbar"><span>FIELD REFERENCE — FILE 640509-040822</span><span><span class="red">■</span> EDITION 2026-10 — CAIRO</span></div>
+  <div class="masthead">
+    <div class="over">OPERATIVE FILE — SOFTWARE ENGINEER, FULL-STACK</div>
+    <h1>Abdullah Mohamed</h1>
+    <div class="under">@AbdullahM07 — OBLIEN — B.SC. COMPUTER SCIENCE, SUEZ CANAL UNIVERSITY</div>
+  </div>
+  <div class="book">
+    <div class="col">
+      <div class="body-start">
+        <p class="dossier"><span class="lead">Builds whole products, twice over.</span> Interface in React, services in Node and Express, data in Mongo and Postgres, deployment in Docker and CI. <b>Five systems are live today</b> — a deployment platform, an AI harness, a finance manager, a watch-together service, a clinic workspace.</p>
+        <div class="equipment">
+          <div class="t">EQUIPMENT — LANGUAGES</div>
+          <div class="eq-line"><span>JavaScript / TypeScript</span><span>PRIMARY</span></div>
+          <div class="eq-line"><span>Python</span><span>ACTIVE</span></div>
+          <div class="eq-line"><span>SQL</span><span>ACTIVE</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="rail2">
+      <div class="key on"><div class="sq">01</div><div class="lb">DOSSIER</div></div>
+      <div class="key"><div class="sq">02</div><div class="lb">EQUIP</div></div>
+      <div class="key"><div class="sq">03</div><div class="lb">CONTRACTS</div></div>
+      <div class="key"><div class="sq">04</div><div class="lb">DEBRIEF</div></div>
+    </div>
+    <div class="col">
+      <div class="body-start" style="position:relative">
+        <div class="equipment" style="margin-top:0">
+          <div class="t">EQUIPMENT — SYSTEMS</div>
+          <div class="eq-line"><span>React / Next.js / Tailwind</span><span>FRONT</span></div>
+          <div class="eq-line"><span>Node / Express / REST</span><span>BACK</span></div>
+          <div class="eq-line"><span>MongoDB / PostgreSQL</span><span>DATA</span></div>
+          <div class="eq-line"><span>Docker / Linux / Actions</span><span>SHIP</span></div>
+        </div>
+        <p class="dossier" style="margin-top:26px">Every claim in this file is checked against a running system. No counters that cannot be verified, no logos of clients who were never asked.</p>
+        <div class="margin-note" style="top:8px"><b>EVIDENCE A—E</b>openship.io · mindwire.sh · masroof · watchlink · clinicai</div>
+        <div class="margin-note" style="top:150px"><b>DEBRIEF KIT</b>cv.pdf — 1 page, signed</div>
+      </div>
+    </div>
+  </div>
+  <div class="botbar"><span>KEYED ENTRY — 01 DOSSIER · 02 EQUIPMENT · 03 CONTRACTS · 04 DEBRIEF</span><span class="cv">CV.PDF ↓</span></div>
+</body>
+</html>
