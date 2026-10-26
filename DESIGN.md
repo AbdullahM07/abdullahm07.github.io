@@ -157,9 +157,17 @@ sharp rectangles. Images sit in 1px hairline frames.
   padding 4px 9px.
 
 ### Cards / Containers
-- **Contract entries:** no card box — a top hairline and typographic anatomy (index
-  line, name, tagline, description, tags, evidence). Ledger rows share the same
-  bottom-hairline rhythm.
+- **Contract rows:** full-width ledger rows split around the rail lane (plate column |
+  rail | body column, alternating sides). Text anatomy: index line, name, tagline,
+  description, tags, evidence. Ledger rows share the same bottom-hairline rhythm.
+
+### Live-Capture Plate (signature)
+- Real screenshots of the running systems (captured at 1440×900, JPEG ~70),
+  1px structural-line frame, slight desaturation (`grayscale(0.25)`) that lifts to full
+  color + 1.02 scale on hover; a ground-dark `LIVE CAPTURE — <domain>` tag sits in the
+  bottom-left corner. Projects with no public surface get a record plate: hatched
+  ground, outlined index numeral, `NO PUBLIC SURFACE — RECORD ON FILE` tag. Never
+  substitute a mockup for a capture or vice versa.
 
 ### Inputs / Fields
 - Raised-ground fill (#0d0d11), 1px structural-line border, ink text; focus ring is a

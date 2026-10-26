@@ -58,13 +58,13 @@ function MessageForm() {
 export function Contact() {
   return (
     <section aria-label="Debrief contact">
-      <div className="section-key" data-reveal>04 — DEBRIEF</div>
-      <h2 data-reveal style={{ '--reveal-delay': '40ms' }}>Open a channel</h2>
-      <div className="debrief-photo" data-reveal style={{ '--reveal-delay': '80ms' }}>
+      <div className="section-key">04 — DEBRIEF</div>
+      <h2>Open a channel</h2>
+      <div className="debrief-photo">
         <img src="/avatar.jpg" alt="Abdullah Mohamed" width="132" height="132" />
         <span className="stamp">ACTIVE</span>
       </div>
-      <div className="channels" data-reveal style={{ '--reveal-delay': '120ms' }}>
+      <div className="channels">
         {profile.socials.map((s) => (
           <div className="channel" key={s.id}>
             <span className="k">{s.label.toUpperCase()}</span>
@@ -74,12 +74,12 @@ export function Contact() {
           </div>
         ))}
       </div>
-      <a className="cv-cta" href={CV_PATH} download data-reveal style={{ '--reveal-delay': '160ms' }}>
+      <a className="cv-cta" href={CV_PATH} download>
         DOWNLOAD CV.PDF ↓
       </a>
       {API_URL && <MessageForm />}
       {!API_URL && (
-        <p className="status-line" data-reveal style={{ '--reveal-delay': '200ms' }}>
+        <p className="status-line">
           <span className="dot">■</span> DIRECT LINES PREFERRED — NO FORMS IN THE WAY
         </p>
       )}
@@ -90,21 +90,21 @@ export function Contact() {
 export function Closing() {
   return (
     <section aria-label="Closing statement">
-      <div className="section-key" data-reveal>04·B — CLOSING ENTRY</div>
-      <h2 data-reveal style={{ '--reveal-delay': '40ms' }}>Problems have solutions</h2>
-      <p className="prose" data-reveal style={{ '--reveal-delay': '80ms' }}>
+      <div className="section-key">04·B — CLOSING ENTRY</div>
+      <h2>Problems have solutions</h2>
+      <p className="prose">
         <span className="lead">Enjoy the process.</span> That is the operating principle on
         file: a problem that can be stated can be shipped against, and the work between the
         two is where this engineer lives.
       </p>
-      <p className="prose" data-reveal style={{ '--reveal-delay': '120ms' }}>
+      <p className="prose">
         Retainers open with a short call, a written scope, and a fixed delivery window. The
         record above is the reference — quote the contract numbers.
       </p>
-      <div className="status-line" data-reveal style={{ '--reveal-delay': '160ms' }}>
+      <div className="status-line">
         <span className="dot">■</span> STATUS: ACCEPTING PROJECTS — Q4 2026
       </div>
-      <div className="margin-inline" data-reveal style={{ '--reveal-delay': '200ms' }}>
+      <div className="margin-inline">
         <b>DEBRIEF KIT</b>
         cv.pdf — one page, evidence-backed. Print it or forward it.
       </div>

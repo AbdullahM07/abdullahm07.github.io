@@ -25,9 +25,8 @@ const NOTES = [
 ];
 
 /** Margin apparatus: hangs off the right edge of the book, one note per
- *  section, each anchored to its section's measured offset and drawn when
- *  that section enters the viewport. Hidden under 1380px (inline variants
- *  render inside the sections there). */
+ *  section, anchored to its section's measured offset. Always visible;
+ *  hidden under 1380px (inline variants render inside the sections there). */
 export default function MarginNotes() {
   const colRef = useRef(null);
   const [tops, setTops] = useState(null);
@@ -50,20 +49,6 @@ export default function MarginNotes() {
     ro.observe(document.getElementById('folios-inner'));
     return () => ro.disconnect();
   }, []);
-
-  useEffect(() => {
-    const notes = colRef.current?.querySelectorAll('.margin-note') ?? [];
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) e.target.classList.add('drawn');
-        }
-      },
-      { rootMargin: '0px 0px -20% 0px' }
-    );
-    notes.forEach((n) => io.observe(n));
-    return () => io.disconnect();
-  }, [tops]);
 
   return (
     <div className="margin-col" ref={colRef} aria-hidden="true">

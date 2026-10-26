@@ -56,6 +56,10 @@ tools/cv       CV PDF generator
 
 ## Media provenance
 
+- `apps/client/src/assets/plates/*.jpg` — live captures of the running systems
+  (openship.io, mindwire.sh, masroof, watchlink), taken at 1440×900 in October 2026.
+  Regenerate with a headless browser when the products change; never replace a capture
+  with a mockup.
 - `apps/client/public/avatar.jpg` — the owner's GitHub avatar
   (https://avatars.githubusercontent.com/u/269013923), used as the file photo.
 - Fonts (Archivo, Martian Mono) — self-hosted variable woff2 from Google Fonts.

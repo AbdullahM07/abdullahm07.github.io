@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import FileBar from './components/FileBar.jsx';
 import Masthead from './components/Masthead.jsx';
 import KeyRail from './components/KeyRail.jsx';
@@ -11,23 +10,6 @@ import { Contact, Closing } from './components/Debrief.jsx';
 import FooterBar from './components/FooterBar.jsx';
 
 export default function App() {
-  useEffect(() => {
-    const targets = document.querySelectorAll('[data-reveal]');
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            e.target.classList.add('revealed');
-            io.unobserve(e.target);
-          }
-        }
-      },
-      { rootMargin: '0px 0px -8% 0px', threshold: 0.05 }
-    );
-    targets.forEach((t) => io.observe(t));
-    return () => io.disconnect();
-  }, []);
-
   return (
     <>
       <FileBar />
